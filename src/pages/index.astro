@@ -1,0 +1,7 @@
+---
+import { fetchJobs } from "../lib/db"
+
+const tmp = await fetchJobs(1)
+---
+
+{JSON.stringify(tmp.jobDetails)}
